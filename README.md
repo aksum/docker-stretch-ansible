@@ -1,4 +1,5 @@
-[![Docker Automated build](https://img.shields.io/docker/automated/aksum/docker-stretch-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/aksum/docker-stretch-ansible/)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/aksum/docker-stretch-ansible/)
+[![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/aksum/docker-stretch-ansible/)
 
 docker-stretch-ansible
 ======================
