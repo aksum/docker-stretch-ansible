@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -Rf /usr/share/doc && rm -Rf /usr/share/man && \
     apt-get clean
 
-RUN pip install ansible cryptography
+RUN pip install setuptools ansible cryptography
 
 RUN useradd -ms /bin/bash deploy
 
