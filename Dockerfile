@@ -1,17 +1,17 @@
 # Debian Stretch (9) base docker image used for testing ansible roles & playbooks.
 FROM debian:stretch
-LABEL maintainer "pedro.m.gomes2@gmail.com"
+LABEL maintainer="Pedro Gomes"
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends sudo build-essential libffi-dev libssl-dev python-pip python-dev && \
+    apt-get install -y --no-install-recommends sudo systemd build-essential libffi-dev libssl-dev python-pip python-dev python-setuptools python-wheel && \
     rm -rf /var/lib/apt/lists/* && \
     rm -Rf /usr/share/doc && rm -Rf /usr/share/man && \
     apt-get clean
 
-RUN pip install setuptools ansible cryptography
+RUN pip install ansible cryptography
 
 RUN useradd -ms /bin/bash deploy
 
