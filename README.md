@@ -5,4 +5,9 @@ docker-stretch-ansible
 
 Debian Stretch (9) container for Ansible role and playbook testing.
 
+How
+---
+
+`docker pull aksum/docker-stretch-ansible`
+
 
